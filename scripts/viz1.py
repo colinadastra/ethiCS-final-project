@@ -176,7 +176,7 @@ year_selector = widgets.Dropdown(options=years["Mathematics"], description="Year
 
 # method to update the years dropdown
 # this is called when the subject is changed
-def update_years(*args):
+def update_years1(*args):
     year = year_selector.value
     grade = grade_selector.value
     year_selector.options = years[subject_selector.value]
@@ -188,11 +188,11 @@ def update_years(*args):
         pass
 
 level_selector1.observe(update_figure, "value")
-subject_selector.observe(update_years, "value")
+subject_selector.observe(update_years1, "value")
 subject_selector.observe(update_figure, "value")
 year_selector.observe(update_figure, "value")
 grade_selector.observe(update_figure, "value")
-grade_selector.observe(update_years, "value")
+grade_selector.observe(update_years1, "value")
 container1 = widgets.VBox(
     [widgets.HBox([level_selector1, subject_selector, year_selector, grade_selector]), fw1]
 )
