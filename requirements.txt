@@ -179,11 +179,6 @@ python-json-logger==3.2.1
     # via jupyter-events
 pytz==2024.2
     # via pandas
-pywinpty==2.0.14
-    # via
-    #   jupyter-server
-    #   jupyter-server-terminals
-    #   terminado
 pyyaml==6.0.2
     # via jupyter-events
 pyzmq==26.2.0
